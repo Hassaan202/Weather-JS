@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="sun.png">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="mainHeading">Weather</h1>
+    </div>
+
+    <section>
+        <div class="container">
+            <form class="form">
+                <div class="dropdown">
+                    <div class="country">
+                        <p>Country:</p>
+                        <select>
+                            <option value="Pakistan">Pakistan</option>
+                        </select>
+                        <div class="countryImg">
+                            <img data-name="just-trying" src="https://flagsapi.com/PK/flat/64.png">
+                        </div>
+                    </div>
+                    <div class="city">
+                        <p>City:</p>
+                        <select>
+                            <option value="Lahore">Lahore</option>
+                        </select>
+                        <div class="btn">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="weatherConditions">
+                <div id="temp">
+                    <i class="fa-solid fa-temperature-three-quarters fa-2x"></i>
+                    <h3>Temperature:</h3>
+                    <p id="tempRes">24 °C</p>
+                </div>
+                <div id="humidity">
+                    <i class="fa-solid fa-water fa-2x"></i>
+                    <h3>Humidity:</h3>
+                    <p id="humidityRes">50 %</p>
+                </div>
+                <div id="visibility">
+                    <i class="fa-solid fa-rainbow fa-2x"></i>
+                    <h3>Visibility:</h3>
+                    <p id="visibilityRes">24 Km</p>
+                </div>
+                <div id="wind">
+                    <i class="fa-solid fa-wind fa-2x"></i>
+                    <h3>Wind Speed:</h3>
+                    <p id="windRes">23 Km/Hr</p>
+                </div>
+            </div>
+        </div>
+        <div class="loader hidden">
+            <img src="sun.png" class="loading1">
+            <h2>Loading...</h2>
+        </div>
+    </section>
+
+    <div class="endBar">
+        <h4 id="b1">By</h4>
+        <h4>Muhammad Hassaan Raza</h4>
+    </div>
+
+    <script src="weather.js"></script>
+    <script src="https://kit.fontawesome.com/a7ad49e4cb.js" crossorigin="anonymous"></script>
+</body>
+</html>

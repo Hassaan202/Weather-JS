@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7417b;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background-color:#1f306e;
+    color:#f5487f;
+}
+
+.dropdown select{
+    outline: none;
+    border: none;
+    border-radius:1rem;
+    padding: 0.4rem;
+    border: 1px solid #8f3b76;
+    margin: 0.5rem;
+    width:40vw;
+    text-align: center;
+    background-color: #1f306e;
+    color: #f5487f;
+}
+
+.country, .city{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #1f306e;
+}
+
+.city{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.countryImg img{
+    width: 2.5rem;
+    height: auto;
+    margin-left: 0.5rem;
+}
+
+.container{
+    margin-top: 3rem;
+}
+
+.btn button{
+    border: none;
+    background-color:#1f306e;
+    color: #f5487f;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.btn button:hover{
+    opacity: 70%;
+}   
+
+.endBar{
+    position: fixed;
+    bottom: 0px;
+    height: 10vh;
+    width: 100vw;
+    background-color: #1f306e;
+    color: #f5487f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherConditions{
+    margin-top: 3rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+
+.weatherConditions div{
+    float: left;
+    padding: 2rem;
+    border: 0.5rem solid #1f306e;
+    border-radius: 2rem;
+    background-color: #1f306e;
+    color: #f5487f;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.weatherConditions div:hover{
+    border: 0.5rem solid #8f3b76;
+    opacity: 90%;
+}
+
+.loader{
+    color: #1f306e;
+    position: fixed;
+    left:47vw;
+}
+
+.loading1{
+    height: 5rem;
+    width: 5rem;
+    color: #1f306e;
+    animation: Loader 2s linear 0s infinite normal;
+    filter: invert(22%) sepia(12%) saturate(3304%) hue-rotate(189deg) brightness(93%) contrast(104%);
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes Loader {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
